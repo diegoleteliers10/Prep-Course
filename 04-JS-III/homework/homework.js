@@ -72,7 +72,7 @@ function arrayContiene(array, elemento) {
     }
   }
   return false*/
-  if(array.includes(elemnto)){
+  if(array.includes(elemento)){
     return true
   }
   else {
