@@ -10,6 +10,12 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+let matriz=[]
+for(key in objeto){
+  matriz.push([key,objeto[key]])
+}
+return matriz
+
 }
 
 
@@ -18,6 +24,16 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+  let cantidadLetras= {}
+  for(var i=0;i<string.length;i++){ 
+    if(Object.keys().includes(string[i])){
+      cantidadLetras[i]=cantidadLetras[i]+1
+    }
+    else{
+      cantidadLetras[i]=1
+    }
+
+  }
 }
 
 
