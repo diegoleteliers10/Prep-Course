@@ -42,7 +42,7 @@ function agregarStringInvertida() {
       stringInvertida = stringInvertida + this.charAt(i);
     }
     return stringInvertida;*/
-    let palabra= this.string.split("").reverse()
+    let palabra= this.nombre.split("").reverse()
     return palabra.join("")
 
   };
