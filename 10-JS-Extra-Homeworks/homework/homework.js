@@ -24,13 +24,13 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
-  let cantidadLetras= {}
+  let cantidadLetras= {};
   for(var i=0;i<string.length;i++){ 
-    if(Object.keys(string).includes(string[i])){
-      cantidadLetras[i]=cantidadLetras[i]+1
+    if(Object.keys(cantidadLetras).includes(string[i])){
+      cantidadLetras[string[i]]=cantidadLetras[string[i]]+1
     }
     else{
-      cantidadLetras[i]=1
+      cantidadLetras[string[i]]=1
     }
 
   }
