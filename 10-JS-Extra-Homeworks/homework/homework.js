@@ -26,7 +26,7 @@ function numberOfCharacters(string) {
   //Escribe tu código aquí
   let cantidadLetras= {}
   for(var i=0;i<string.length;i++){ 
-    if(Object.keys().includes(string[i])){
+    if(Object.keys(string).includes(string[i])){
       cantidadLetras[i]=cantidadLetras[i]+1
     }
     else{
