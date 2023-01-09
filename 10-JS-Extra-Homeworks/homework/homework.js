@@ -32,8 +32,8 @@ function numberOfCharacters(string) {
     else{
       cantidadLetras[string[i]]=1
     }
-
   }
+  return cantidadLetras
 }
 
 
