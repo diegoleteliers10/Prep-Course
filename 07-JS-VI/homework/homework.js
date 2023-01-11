@@ -25,7 +25,7 @@ function sumarArray(numeros, cb) {
   // Pasa el resultado a `cb`
   // No es necesario devolver nada
   //Tu código:
-  var sumaTotal = numeros.reduce(function(acc,curr) {
+  var sumaTotal = numeros.reduce(function(acc,curr) { 
     return acc + curr;
   },0);
   cb(sumaTotal)
@@ -55,13 +55,19 @@ function filter(array) {
   //Filtrar todos los elementos del array que comiencen con la letra "a".
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
-nuevoArray=[];
+/*nuevoArray=[];
 for (var i=0;i<array.length;i++) {
   if (array[i][0]==="a") {
     nuevoArray.push(array[i])
   }
 }
-return nuevoArray;
+return nuevoArray;*/
+let nuevoArray= array.map(function(el){
+  if(array[el][0]==="a"){
+    return array[el]
+  }
+})
+return nuevoArray
 
 }
 
